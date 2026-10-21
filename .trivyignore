@@ -1,0 +1,5 @@
+# Trivy ignore file
+# Add one CVE per line to ignore known vulnerabilities for this project.
+# Example:
+# CVE-2024-12345
+# CVE-2025-67890
