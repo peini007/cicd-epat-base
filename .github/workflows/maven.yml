@@ -2,9 +2,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -51,7 +51,7 @@ jobs:
     needs: docker-build
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v4
     - name: Run Trivy vulnerability scan on built image
       continue-on-error: true
       uses: aquasecurity/trivy-action@master
